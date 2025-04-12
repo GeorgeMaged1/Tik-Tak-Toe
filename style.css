@@ -1,0 +1,68 @@
+/* Tic Tac Toe Game Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:#F0E68C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background-color: #FFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #FF8C00;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 50px);
+  grid-template-rows: repeat(3, 50px);
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #FF8C00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cell:hover {
+  background-color: #FFF8DC;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #FF8C00;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #FF4500;
+}
+
+#message {
+  font-size: 18px;
+  margin-bottom: 20px;
+  min-height: 24px;
+}
